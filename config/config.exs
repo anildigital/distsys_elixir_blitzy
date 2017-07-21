@@ -20,6 +20,11 @@ use Mix.Config
 #
 #     config :logger, level: :info
 #
+config :blitzy, master_node: :"a@127.0.0.1"
+
+config :blitzy, slave_nodes: [:"b@127.0.0.1",
+                              :"c@127.0.0.1",
+                              :"d@127.0.0.1"]
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment
