@@ -1,21 +1,17 @@
 # Blitzy
 
-**TODO: Add description**
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `blitzy` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:blitzy, "~> 0.1.0"}
-  ]
-end
+```bash
+mix deps.get
+mix compile
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/blitzy](https://hexdocs.pm/blitzy).
+## Run
+```elixir
+iex --name b@127.0.0.1 -S mix
+iex --name c@127.0.0.1 -S mix
+iex --name d@127.0.0.1 -S mix
+./blitzy -n 10000 http://www.bieberfever.com
+```
 
